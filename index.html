@@ -1,10 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- font-awsome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Developer with Ls</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <form
+            action="#"
+            class="form mt-2 border border-2 rounded rounded-2 p-4"
+          >
+            <fieldset>
+              <legend>Developer Info:</legend>
+              <div class="input-group my-2">
+                <span class="input-group-text">Name</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Developer Name"
+                />
+              </div>
+              <div class="input-group my-2 mb-3">
+                <span class="input-group-text">Image</span>
+                <input
+                  type="text"
+                  id="img"
+                  class="form-control"
+                  placeholder="Image Link"
+                />
+              </div>
+
+              <!-- radio button for gender -->
+              <div class="radio_button">
+                <span class="gender_heading h5">Select Gender :</span>
+                <div class="form-check form-check-inline ms-4">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    value="Male"
+                    id="male"
+                  />
+                  <label class="form-check-label" for="male">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="gender"
+                    value="Female"
+                    id="female"
+                  />
+                  <label class="form-check-label" for="female">Female</label>
+                </div>
+              </div>
+
+              <!-- checkbox for skills -->
+              <div class="checbox_button my-4">
+                <h5 class="gender_heading">Select Skills :</h5>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="Skills"
+                    value="html"
+                    id="html"
+                  />
+                  <label class="form-check-label" for="html">HTML</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="skills"
+                    value="css"
+                    id="css"
+                  />
+                  <label class="form-check-label" for="css">CSS</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="skills"
+                    value="scss"
+                    id="scss"
+                  />
+                  <label class="form-check-label" for="scss">SCSS</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="skills"
+                    value="JavaScript"
+                    id="JavaScript"
+                  />
+                  <label class="form-check-label" for="JavaScript"
+                    >JavaScript</label
+                  >
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="skills"
+                    value="Bootstrap"
+                    id="Bootstrap"
+                  />
+                  <label class="form-check-label" for="Bootstrap"
+                    >Bootstrap</label
+                  >
+                </div>
+              </div>
+
+              <!-- social link box here -->
+              <div class="social_link_input">
+                <div class="input-group my-2">
+                  <span class="input-group-text">Facebook</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="facebook"
+                    placeholder="Facebook Link"
+                  />
+                </div>
+                <div class="input-group my-2">
+                  <span class="input-group-text">Whatsapp</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="whatsapp"
+                    placeholder="Whatsapp Link"
+                  />
+                </div>
+                <div class="input-group my-2">
+                  <span class="input-group-text">YouTube</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="youtube"
+                    placeholder="YouTube Link"
+                  />
+                </div>
+                <div class="input-group my-2">
+                  <span class="input-group-text">Linkedin</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="linkedin"
+                    placeholder="Linkedin Link"
+                  />
+                </div>
+                <div class="input-group my-2">
+                  <span class="input-group-text">Twitter</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="twitter"
+                    placeholder="Twitter Link"
+                  />
+                </div>
+              </div>
+              <button
+                class="btn btn-primary w-100 mt-3"
+                type="submit"
+                id="submit-btn"
+              >
+                Add Developer
+              </button>
+            </fieldset>
+          </form>
+        </div>
+
+        <!-- Developer card -->
+        <div class="col-md-7">
+          <div class="row render_div">
+            <div class="col-md-6">
+              <div class="card my-2">
+                <img
+                  src="https://images.unsplash.com/photo-1553272725-086100aecf5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"
+                  class="card-img-top"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h2 class="card-title">Anamul Haque</h2>
+                  <h6 class="card-subtitle text-muted">Male</h6>
+                  <hr />
+                  <h4 class="card-title">Skills:</h4>
+                  <hr />
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">item 1</li>
+                    <li class="list-group-item">item 1</li>
+                    <li class="list-group-item">item 1</li>
+                    <li class="list-group-item">item 1</li>
+                  </ul>
+                  <hr />
+                  <div class="social-link text-center my-4">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                  </div>
+                  <div class="mt-3 text-center">
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                    <a href="#" class="btn btn-primary">Delet Product</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/function.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
 </html>

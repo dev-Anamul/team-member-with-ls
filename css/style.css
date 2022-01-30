@@ -1,0 +1,19 @@
+img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.social-link > i {
+  font-size: 20px;
+  margin: 0 5px;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  background-color: orangered;
+  color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
